@@ -1,9 +1,10 @@
-import { Text, View, StyleSheet } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Hola Will</Text>
+      <Text style={styles.title}>William Ariel Ortiz Teran</Text>
+      <Text style={styles.subtitle}>Curso: 3E2</Text>
     </View>
   );
 }
@@ -13,11 +14,17 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#ffffff", // Fondo blanco limpio
+    backgroundColor: "#1e3a5f",
   },
-  text: {
-    fontSize: 48,             // Tamaño de letra grande como en tu imagen
-    fontWeight: "bold",       // Letra en negrita
-    color: "#000000",         // Color negro
+  title: {
+    color: "#ffffff",
+    fontSize: 30,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+  subtitle: {
+    color: "#facc15",
+    fontSize: 22,
+    marginTop: 12,
   },
 });
